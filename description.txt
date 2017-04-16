@@ -1,0 +1,4 @@
+The invis mod allows you to make yourself or any other player invisible with the `/invisible` command (requires invisible privilege).
+
+Forum: https://forum.minetest.net/viewtopic.php?f=9&t=17389
+GitHub: https://github.com/octacian/minetest-mod-invis
