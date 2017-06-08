@@ -7,7 +7,7 @@ Invisibility Command [invis]
 This extremely simple mod introduces a single command that allows you to make yourself or another player invisible (both the player itself and the nametag).
 
 __Usage:__
-- `/invisible`: Toggle invisibility for yourself
-- `/invisible <name>`: Toggle invisibility for another player
+- `/vanish`: Toggle invisibility for yourself
+- `/vanish <name>`: Toggle invisibility for another player
 
-__Note:__ The `/invisible` command requires the `invisible` privilege.
+__Note:__ The `/vanish` command requires the `vanish` privilege.
