@@ -2,6 +2,7 @@
 
 invis = {}
 local invisible = {}
+local huds      = {}
 
 -- [function] Get visible
 function invis.get(name)
@@ -32,6 +33,14 @@ function invis.toggle(player, toggle)
       color = {a = 0, r = 255, g = 255, b = 255},
     })
     msg = "now invisible"
+
+		-- Add HUD
+		huds[name] = player:hud_add({
+			hud_elem_type = "text",
+			position = {x = 0.5, y = 0.85},
+			text = "You are invisible to other players",
+			number = 0x00BC00
+		})
   else
     -- Show player and nametag
     prop = {
@@ -42,6 +51,11 @@ function invis.toggle(player, toggle)
 			color = {a = 255, r = 255, g = 255, b = 255},
 		})
     msg = "no longer invisible"
+
+		-- Remove HUD
+		if huds[name] then
+			player:hud_remove(huds[name])
+		end
   end
 
   -- Update properties
