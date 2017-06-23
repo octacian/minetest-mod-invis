@@ -65,7 +65,7 @@ function invis.toggle(player, toggle)
 end
 
 -- [register] Privilege
-minetest.register_privilege("vanish", "Allow use of /vanish command")
+minetest.register_privilege("invisibility", "Allow use of /vanish command")
 
 -- [register] Command
 minetest.register_chatcommand("vanish", {
