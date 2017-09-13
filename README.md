@@ -10,4 +10,4 @@ __Usage:__
 - `/vanish`: Toggle invisibility for yourself
 - `/vanish <name>`: Toggle invisibility for another player
 
-__Note:__ The `/vanish` command requires the `vanish` privilege.
+__Note:__ The `/vanish` command requires the `invisibility` privilege.
