@@ -71,7 +71,7 @@ minetest.register_privilege("vanish", "Allow use of /vanish command")
 minetest.register_chatcommand("vanish", {
   description = "Make yourself or another player invisible",
   params = "<name>",
-  privs = {invisibility=true},
+  privs = {vanish=true},
   func = function(name, param)
     if minetest.get_player_by_name(param) then
       name = param
